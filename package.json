@@ -1,0 +1,12 @@
+{
+  "name": "dialer-record",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix backend run setup",
+    "dev:api": "npm --prefix backend run dev",
+    "dev:web": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "test": "npm --prefix backend test"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+backend/exports/
+setup-credentials.txt
+*.dump
+*.backup
+*.sql.gz
+*.pem
+*.key

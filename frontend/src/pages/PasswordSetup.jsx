@@ -1,0 +1,11 @@
+import {useState} from 'react';
+import {Navigate,useNavigate} from 'react-router-dom';
+import {useAuth} from '../context/AuthContext';
+import api from '../services/api';
+export default function PasswordSetup(){
+ const {user,setUser}=useAuth(),navigate=useNavigate();
+ const [currentPassword,setCurrent]=useState(''),[password,setPassword]=useState(''),[confirm,setConfirm]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState(''),[message,setMessage]=useState('');
+ async function save(e){e.preventDefault();setError('');setMessage('');if(password!==confirm){setError('New passwords do not match.');return;}setBusy(true);try{const r=await api.post('/auth/password',{currentPassword,password});setUser(r.data);setCurrent('');setPassword('');setConfirm('');setMessage('Password updated. Other sessions have been signed out.');if(user.must_change_password)navigate('/dashboard',{replace:true});}catch(err){setError(err.response?.data?.message||'Could not update password.');}finally{setBusy(false);}}
+ if(!user.must_change_password)return <Navigate to="/dashboard" replace/>;
+ return <section className="workspace-dark mx-auto min-h-screen max-w-lg p-6 pt-16"><h1 className="text-xl font-semibold">Set your password</h1><p className="mt-2 text-sm text-zinc-400">{user.must_change_password?'Set your own password before accessing the workspace.':'Update the password for '+user.username+'.'}</p><form onSubmit={save} className="panel mt-6 space-y-4 p-5">{error&&<p role="alert" className="error">{error}</p>}{message&&<p role="status" className="text-sm text-emerald-400">{message}</p>}{[['Current password',currentPassword,setCurrent,'current-password'],['New password',password,setPassword,'new-password'],['Confirm new password',confirm,setConfirm,'new-password']].map(([label,value,set,auto])=><label className="block" key={label}><span className="label">{label}</span><input className="field" type="password" autoComplete={auto} value={value} onChange={e=>set(e.target.value)} minLength={auto==='new-password'?8:1} maxLength={128} required/></label>)}<p className="text-xs text-zinc-500">Use at least 8 characters.</p><button className="primary" disabled={busy}>{busy?'Updating…':'Update password'}</button></form></section>;
+}

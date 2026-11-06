@@ -1,0 +1,203 @@
+/* DialAxis: neutral black surfaces, indigo interaction, clear data hierarchy. */
+body { background:#17171c; }
+.workspace-dark { color:#b4b4c0;background:#17171c;color-scheme:dark; }
+.workspace-dark .panel { background:#17171c;border-color:#2a2a32;border-radius:14px;box-shadow:none; }
+.workspace-dark .field { background:#17171c;color:#b4b4c0;border-color:#2a2a32;border-radius:8px; }
+.workspace-dark .field:focus { border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .label { color:#b4b4c0;font-size:11px; }
+.workspace-dark .primary { background:#17171c;color:#b4b4c0;box-shadow:none;border-radius:9px; }
+.workspace-dark .primary:hover { background:#17171c; }
+.workspace-dark .secondary { background:#17171c;color:#b4b4c0;border-color:#2a2a32;border-radius:8px; }
+.workspace-dark .secondary:hover { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .error { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark :focus-visible { outline-color:#e97c25; }
+.workspace-dark .create-user-dialog { background:#17171c;color:#b4b4c0;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .create-user-dialog footer { background:#17171c; }
+.workspace-dark .create-user-dialog input[type=radio] { accent-color:#e97c25; }
+.workspace-dark .create-user-dialog label:has(input[type=radio]:checked) { border-color:#2a2a32;background:#17171c; }
+.workspace-dark .powered-brand .text-slate-200 { color:#b4b4c0; }
+.workspace-dark .powered-brand .text-slate-400 { color:#b4b4c0; }
+.metric-tile { position:relative;overflow:hidden;transition:transform .18s,box-shadow .18s; }
+.workspace-dark .metric-tile:hover { transform:translateY(-2px);box-shadow:none; }
+.metric-tile::after { content:'';position:absolute;left:16px;right:16px;bottom:0;height:3px;border-radius:3px;background:#17171c;opacity:.7; }
+.metric-tile:nth-child(2)::after { background:#17171c; }
+.metric-tile:nth-child(3)::after { background:#17171c; }
+.metric-tile:nth-child(4)::after { background:#17171c; }
+.metric-tile:nth-child(5)::after { background:#17171c; }
+.login-story { background:#17171c; }
+.login-story::after { content:'';position:absolute;width:530px;height:530px;border:1px solid #ffffff0c;border-radius:50%;right:-260px;top:16%;box-shadow:none;pointer-events:none; }
+.login-story > * { position:relative;z-index:1; }
+.login-story h1 { font-size:clamp(36px,4.3vw,64px);line-height:1.12;letter-spacing:-2px; }
+.login-form { background:#17171c; }
+.login-form .field { background:#17171c;padding-top:12px;padding-bottom:12px; }
+.login-form .primary { padding:13px; }
+.sidebar-drawer { background:#17171c; }
+.workspace-dark .dialer-page { background:transparent;color:#b4b4c0;padding:4px; }
+.workspace-dark .dialer-header { background:#17171c;border-color:#2a2a32;box-shadow:none;border-radius:12px;padding:14px 16px; }
+.workspace-dark .dialer-heading h1,.workspace-dark .dialer-home-header h1 { color:#b4b4c0; }
+.workspace-dark .dialer-heading p,.workspace-dark .dialer-home-hint { color:#b4b4c0; }
+.workspace-dark .dialer-logo { background:#17171c;color:#b4b4c0;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-refresh { background:#17171c;color:#b4b4c0;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-sync { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-kpi { background:#17171c;border-color:#2a2a32;box-shadow:none;border-radius:10px; }
+.workspace-dark .dialer-kpi:hover { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-kpi-top { color:#b4b4c0; }
+.workspace-dark .dialer-kpi strong { color:#b4b4c0; }
+.workspace-dark .dialer-kpi.selected { background:#17171c;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-files { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-section-heading h2 { color:#b4b4c0; }
+.workspace-dark .dialer-section-heading p { color:#b4b4c0; }
+.workspace-dark .dialer-toolbar { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-search input,.workspace-dark .dialer-field input,.workspace-dark .dialer-field select,.workspace-dark .dialer-page-size select { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-tabs { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-tabs button { color:#b4b4c0; }
+.workspace-dark .dialer-status-tabs button[aria-pressed="true"] { color:#b4b4c0;background:#17171c;box-shadow:none; }
+.workspace-dark .dialer-status-tabs button span { color:#b4b4c0; }
+.workspace-dark .dialer-best { background:#17171c;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-best-name button,.workspace-dark .dialer-best-stat strong { color:#b4b4c0; }
+.workspace-dark .dialer-best-name > span,.workspace-dark .dialer-best-primary strong,.workspace-dark .dialer-leading { color:#b4b4c0; }
+.workspace-dark .dialer-table th { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-table td { color:#b4b4c0;border-color:#2a2a32; }
+.workspace-dark .dialer-table td.dialer-sales,.workspace-dark .dialer-file-name { color:#b4b4c0; }
+.workspace-dark .dialer-table tbody tr:hover { background:#17171c; }
+.workspace-dark .dialer-file-id { color:#b4b4c0; }
+.workspace-dark .dialer-badge { background:#17171c;color:#b4b4c0;border-color:#2a2a32; }
+.workspace-dark .dialer-badge.active { background:#17171c;color:#b4b4c0;border-color:#2a2a32; }
+.workspace-dark .dialer-quality-card { background:#17171c;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-quality-card > strong,.workspace-dark .dialer-dedup h2 { color:#b4b4c0; }
+.workspace-dark .dialer-quality-top { color:#b4b4c0; }
+.workspace-dark .dialer-quality-download { background:#17171c;border-color:#2a2a32;color:#b4b4c0; }
+.workspace-dark .dialer-quality-bottom b { color:#b4b4c0;background:#17171c; }
+.workspace-dark .dialer-source-card { background:#17171c;border-color:#2a2a32;border-radius:12px;box-shadow:none; }
+.workspace-dark .dialer-source-card:hover { border-color:#2a2a32;background:#17171c; }
+.workspace-dark .dialer-source-card h2 { color:#b4b4c0; }
+.workspace-dark .dialer-source-card p { color:#b4b4c0; }
+.workspace-dark .dialer-source-card footer { border-color:#2a2a32; }
+.workspace-dark .dialer-source-card footer b { color:#b4b4c0; }
+.workspace-dark .dialer-home-header { border-color:#2a2a32; }
+.workspace-dark .dialer-alert { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-detail-dialog,.workspace-dark .dialer-status-dialog { color-scheme:dark;background:#17171c;color:#b4b4c0;border-color:#2a2a32;box-shadow:none; }
+.workspace-dark .dialer-detail-header,.workspace-dark .dialer-status-dialog > header { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-detail-header h2,.workspace-dark .dialer-detail-section h3,.workspace-dark .dialer-status-dialog header h2 { color:#b4b4c0; }
+.workspace-dark .dialer-detail-totals strong { color:#b4b4c0; }
+.workspace-dark .dialer-flag { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-flag > span { color:#b4b4c0; }
+.workspace-dark .dialer-flag strong { color:#b4b4c0; }
+.workspace-dark .dialer-status-overview { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-overview strong { color:#b4b4c0; }
+.workspace-dark .dialer-status-search { background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-search input { color:#b4b4c0; }
+.workspace-dark .dialer-status-table-wrap,.workspace-dark .dialer-detail-statuses { border-color:#2a2a32; }
+.workspace-dark .dialer-status-table-wrap th { background:#17171c;color:#b4b4c0; }
+.workspace-dark .dialer-status-table-wrap td { color:#b4b4c0;border-color:#2a2a32; }
+.workspace-dark .dialer-status-table-wrap td:nth-child(3) { color:#b4b4c0; }
+.workspace-dark .dialer-status-table-wrap tr:hover td { background:#17171c; }
+.workspace-dark .dialer-status-code { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-bulk,.workspace-dark .dialer-status-action button { color:#b4b4c0;background:#17171c;border-color:#2a2a32; }
+.workspace-dark .dialer-status-track { background:#17171c; }
+@media (prefers-reduced-motion: reduce) { .metric-tile { transition:none; } .workspace-dark .metric-tile:hover { transform:none; } }
+
+.workspace-dark .dialer-kpi { --accent:#2874c7; }
+.workspace-dark .dialer-kpi.green,.workspace-dark .dialer-quality-card { --accent:#168268; }
+.workspace-dark .dialer-kpi.slate,.workspace-dark .dialer-quality-card.amber { --accent:#ad740d; }
+.workspace-dark .dialer-kpi.violet,.workspace-dark .dialer-quality-card.violet { --accent:#7951be; }
+.workspace-dark .dialer-kpi.orange,.workspace-dark .dialer-quality-card.rose { --accent:#be4771; }
+.workspace-dark .dialer-quality-card.blue { --accent:#2874c7; }
+.workspace-dark .dialer-quality-card.red { --accent:#c75050; }
+.workspace-dark .dialer-source-card { --source-accent:#168268; }
+.workspace-dark .dialer-source-card.fe { --source-accent:#7951be; }
+.workspace-dark .dialer-status-dialog { --status-accent:#168268; }
+.workspace-dark .dialer-status-dialog.is-duplicates { --status-accent:#ad740d; }
+
+:root { color-scheme:dark; }
+body,.workspace-dark { background:#09090c;color:#e8e8ef; }
+body { font-family:Inter,ui-sans-serif,system-ui,sans-serif; }
+::selection { background:#6366f150;color:#fff; }
+.workspace-dark > header { background:#0c0c0fee;border-color:#232329;height:58px; }
+aside,.sidebar-drawer { background:#0c0c0f!important;border-color:#232329!important; }
+aside nav a { padding-top:11px;padding-bottom:11px;border-radius:7px; }
+aside nav a[aria-current=page] { background:#818cf812;border-color:#818cf82b;color:#c7cdff;box-shadow:inset 2px 0 #818cf8; }
+aside nav a:not([aria-current=page]):hover { background:#ffffff06; }
+.workspace-dark .panel { background:#121216;border-color:#26262e;border-radius:10px;box-shadow:0 2px 3px #0002; }
+.workspace-dark .field { background:#0d0d11;border-color:#303039;color:#ededf3; }
+.workspace-dark input::placeholder { color:#666672; }
+.workspace-dark .field:focus { border-color:#818cf8;box-shadow:0 0 0 3px #818cf815; }
+.workspace-dark .label { color:#a1a1ad; }
+.workspace-dark .primary,.workspace-dark .dialer-refresh { background:#818cf8;color:#0b0b15;border-color:#818cf8;font-weight:600;box-shadow:none; }
+.workspace-dark .primary:hover,.workspace-dark .dialer-refresh:hover { background:#a5b0ff; }
+.workspace-dark .secondary { background:#19191f;color:#d2d2de;border-color:#303039; }
+.workspace-dark .secondary:hover { background:#24242c;border-color:#484854; }
+.workspace-dark :focus-visible { outline-color:#a5b4fc; }
+.workspace-dark .error { color:#fda4af;background:#391821;border-color:#6b2534; }
+.workspace-dark .metric-tile { padding:14px 16px;background:linear-gradient(135deg,#19191f,#121216); }
+.workspace-dark .metric-tile:hover { transform:none;border-color:#4a4a5c;box-shadow:none; }
+.metric-tile::after { left:0;right:auto;top:18px;bottom:18px;width:2px;height:auto;background:#818cf8;opacity:.8; }
+.metric-tile:nth-child(2)::after { background:#34d399; }
+.metric-tile:nth-child(3)::after { background:#fbbf24; }
+.metric-tile:nth-child(4)::after { background:#a78bfa; }
+.metric-tile:nth-child(5)::after { background:#38bdf8; }
+.overview-metrics strong { font-size:25px;letter-spacing:-1px; }
+.overview-page > div:first-child { padding:4px 0 6px; }
+.workspace-dark .create-user-dialog { background:#141419;color:#eeeef4;border-color:#363640;box-shadow:0 24px 100px #000a; }
+.workspace-dark .create-user-dialog footer { background:#101014; }
+.workspace-dark .create-user-dialog label:has(input[type=radio]:checked) { border-color:#818cf870;background:#818cf80d; }
+.workspace-dark .create-user-dialog input[type=radio] { accent-color:#818cf8; }
+.workspace-dark .powered-brand .text-slate-200 { color:#d4d4df; }
+.workspace-dark .powered-brand .text-slate-400 { color:#8b8b99; }
+.login-story { background:radial-gradient(ellipse at 0 100%,#27203e,transparent 65%),#0b0b10;border-right:1px solid #26262e; }
+.login-story::after { border-color:#818cf81a;box-shadow:0 0 0 60px #818cf804,0 0 0 120px #818cf803; }
+.login-form { background:#0e0e12; }
+.login-form .field { background:#16161c; }
+.login-story h1 { font-size:clamp(36px,4vw,58px);letter-spacing:-2.5px; }
+.workspace-dark .dialer-header { background:#121216;border-color:#26262e;padding:12px 14px;border-radius:10px; }
+.workspace-dark .dialer-heading h1,.workspace-dark .dialer-home-header h1,.workspace-dark .dialer-section-heading h2,.workspace-dark .dialer-dedup h2,.workspace-dark .dialer-source-card h2 { color:#eeeef4; }
+.workspace-dark .dialer-logo { color:#a5b4fc;background:#818cf812;border-color:#818cf826; }
+.workspace-dark .dialer-sync { color:#6ee7b7;background:#34d3990a;border-color:#34d39920; }
+.workspace-dark .dialer-kpi { background:#141419;border-color:#2a2a32;border-radius:8px;box-shadow:none; }
+.workspace-dark .dialer-kpi.selected { background:#818cf80c;border-color:#818cf86b;box-shadow:inset 2px 0 #818cf8; }
+.workspace-dark .dialer-kpi:hover { background:#1c1c23;border-color:#464653; }
+.workspace-dark .dialer-kpi strong,.workspace-dark .dialer-quality-card > strong { color:#f0f0f5; }
+.workspace-dark .dialer-files { background:#121216;border-color:#292931;border-radius:10px; }
+.workspace-dark .dialer-toolbar { background:#101014;border-color:#292931; }
+.workspace-dark .dialer-search input,.workspace-dark .dialer-field input,.workspace-dark .dialer-field select,.workspace-dark .dialer-page-size select { background:#19191f;color:#d9d9e4;border-color:#30303a; }
+.workspace-dark .dialer-status-tabs { background:#0d0d11;border-color:#2a2a32; }
+.workspace-dark .dialer-status-tabs button[aria-pressed=true] { background:#252534;color:#c7cdff; }
+.workspace-dark .dialer-best { background:#34d39906;border-color:#34d39925;box-shadow:inset 2px 0 #34d399; }
+.workspace-dark .dialer-best-name button,.workspace-dark .dialer-best-stat strong { color:#e2e2ed; }
+.workspace-dark .dialer-best-name > span,.workspace-dark .dialer-best-primary strong,.workspace-dark .dialer-leading { color:#6ee7b7; }
+.workspace-dark .dialer-table th,.workspace-dark .dialer-status-table-wrap th { background:#0f0f13;color:#9393a3;border-color:#292931; }
+.workspace-dark .dialer-table td { color:#b9b9c9;border-color:#24242c; }
+.workspace-dark .dialer-table td.dialer-sales,.workspace-dark .dialer-file-name { color:#ececf3; }
+.workspace-dark .dialer-table tbody tr:hover,.workspace-dark .dialer-status-table-wrap tr:hover td { background:#1b1b22; }
+.workspace-dark .dialer-badge { background:#202027;color:#9999a9;border-color:#303039; }
+.workspace-dark .dialer-badge.active { background:#34d3990c;color:#6ee7b7;border-color:#34d39926; }
+.workspace-dark .dialer-quality-card { background:#141419;border-color:#2b2b34; }
+.workspace-dark .dialer-quality-download { background:#22222b;color:#a9a9bd;border-color:#353541; }
+.workspace-dark .dialer-quality-download:hover { color:#c7d2fe;border-color:#818cf8; }
+.workspace-dark .dialer-quality-bottom b { background:#22222b;color:#b4b4c8; }
+.workspace-dark .dialer-source-card { background:#141419;border-color:#2b2b34;border-radius:10px; }
+.workspace-dark .dialer-source-card:hover { background:#1b1b23;border-color:#6366f170; }
+.workspace-dark .dialer-alert { color:#fcd38b;background:#332713;border-color:#665128; }
+.workspace-dark .dialer-detail-dialog,.workspace-dark .dialer-status-dialog { background:#141419;color:#b9b9ca;border-color:#393944;box-shadow:0 30px 100px #000b; }
+.workspace-dark .dialer-detail-header,.workspace-dark .dialer-status-dialog > header { background:#19191f;border-color:#2d2d37; }
+.workspace-dark .dialer-detail-header h2,.workspace-dark .dialer-detail-section h3,.workspace-dark .dialer-status-dialog header h2,.workspace-dark .dialer-detail-totals strong,.workspace-dark .dialer-flag strong,.workspace-dark .dialer-status-overview strong { color:#eeeef5; }
+.workspace-dark .dialer-flag,.workspace-dark .dialer-status-overview,.workspace-dark .dialer-status-search { background:#101014;border-color:#30303a; }
+.workspace-dark .dialer-status-search input { color:#d4d4e2; }
+.workspace-dark .dialer-status-table-wrap td:nth-child(3) { color:#e4e4ef; }
+.workspace-dark .dialer-status-code,.workspace-dark .dialer-status-bulk,.workspace-dark .dialer-status-action button { color:#a5b4fc;background:#818cf80b;border-color:#818cf830; }
+.workspace-dark .dialer-status-track { background:#2b2b37; }
+.workspace-dark .dialer-kpi,.workspace-dark .dialer-quality-card.blue { --accent:#93c5fd; }
+.workspace-dark .dialer-kpi.green,.workspace-dark .dialer-quality-card { --accent:#6ee7b7; }
+.workspace-dark .dialer-kpi.slate,.workspace-dark .dialer-quality-card.amber { --accent:#fcd38b; }
+.workspace-dark .dialer-kpi.violet,.workspace-dark .dialer-quality-card.violet { --accent:#c4b5fd; }
+.workspace-dark .dialer-kpi.orange,.workspace-dark .dialer-quality-card.rose { --accent:#f9a8d4; }
+.workspace-dark .dialer-quality-card.red { --accent:#fda4af; }
+.workspace-dark .dialer-source-card { --source-accent:#6ee7b7; }
+.workspace-dark .dialer-source-card.fe { --source-accent:#a5b4fc; }
+.workspace-dark .dialer-status-dialog { --status-accent:#a5b4fc; }
+.workspace-dark .dialer-status-dialog.is-duplicates { --status-accent:#fcd38b; }
+
+.workspace-dark .text-zinc-500 { color:#90909f; }
+.login-form > div > span { color:#a5b4fc; }
+
+.workspace-dark .dialer-source-card.fe2 { --source-accent:#fcd38b; --source-tint:245,158,11; }

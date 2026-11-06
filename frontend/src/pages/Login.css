@@ -1,0 +1,24 @@
+.signin-page.workspace-dark { min-height:100dvh;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 40%,#20203355,transparent 60%),#09090d;color:#eeeef4; }
+.signin-panel { width:min(100%,380px);padding:28px;border:1px solid #30303b;border-radius:16px;background:linear-gradient(145deg,#191920,#111116 70%);box-shadow:0 20px 70px #0005,inset 0 1px #ffffff05; }
+.signin-brand { display:flex;align-items:center;gap:12px;margin-bottom:25px; }
+.signin-brand > span { display:grid;place-items:center;height:43px;width:43px;border:1px solid #818cf832;border-radius:12px;background:#818cf810;color:#b8beff;flex-shrink:0; }
+.signin-brand h1 { font-size:23px;line-height:1.2;font-weight:650;letter-spacing:-.7px; }
+.signin-brand p { margin-top:5px;font-size:11px;color:#9393a6; }
+.signin-form { display:grid;gap:17px; }
+.signin-form .label { font-size:11px;color:#bdbdca;margin-bottom:7px; }
+.signin-input { display:flex;align-items:center;gap:10px;height:42px;padding:0 12px;border:1px solid #34343f;background:#0c0c11;border-radius:8px;color:#7d7d8e;transition:border-color .15s,box-shadow .15s; }
+.signin-input:focus-within { border-color:#919bff;box-shadow:0 0 0 3px #818cf810; }
+.signin-input > svg { flex-shrink:0; }
+.signin-input input { min-width:0;width:100%;height:100%;background:transparent;color:#eeeef4;font-size:12px;outline:none; }
+.signin-input input:focus-visible { outline:none; }
+.signin-input button { display:grid;place-items:center;padding:4px;color:#9393a7;border-radius:4px; }
+.signin-input button:hover { color:#e4e4f0; }
+.workspace-dark .signin-submit { width:100%;height:42px;justify-content:center;gap:10px;border-radius:8px;margin-top:3px;font-size:12px;background:#a5adff;color:#111125; }
+.signin-help { font-size:10px;color:#9292a3;text-align:center;margin-top:16px; }
+.signin-partner { margin-top:21px;padding-top:18px;border-top:1px solid #2b2b35;display:flex;justify-content:center; }
+.signin-partner .powered-brand .powered-mark { width:38px;height:38px;border-width:4px;border-radius:9px; }
+.signin-partner .powered-brand .powered-mark img { height:30px; }
+.signin-partner .powered-name { font-size:15px; }
+@media(max-width:420px) { .signin-page.workspace-dark { padding:16px; } .signin-panel { padding:24px; } }
+@media(max-height:520px) { .signin-page.workspace-dark { padding:12px; } .signin-panel { padding:18px 24px; } .signin-brand { margin-bottom:16px; } .signin-form { gap:12px; } .signin-help { margin-top:12px; } .signin-partner { margin-top:14px;padding-top:12px; } }
+@media(prefers-reduced-motion:reduce) { .signin-input { transition:none; } }

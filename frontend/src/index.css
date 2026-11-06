@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+ body { @apply m-0 bg-[#0b101b] text-slate-200 antialiased; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+ button, a, input, select { @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400; }
+ button:disabled { @apply opacity-50 cursor-not-allowed; }
+}
+@layer components {
+ .field { @apply w-full rounded-lg border border-slate-700/70 bg-[#0d1524] px-3 py-2.5 text-sm text-slate-100 outline-none focus:border-teal-400; }
+ .label { @apply block mb-1.5 text-xs font-medium text-slate-400; }
+ .primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-teal-400 px-4 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-teal-300; }
+ .secondary { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-700 px-3 py-2 text-xs text-slate-300 hover:bg-slate-800; }
+ .error { @apply rounded-lg border border-rose-400/20 bg-rose-400/10 p-3 text-sm text-rose-200; }
+ .panel { @apply rounded-xl border border-slate-800 bg-[#111a29]; }
+}
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.powered-brand { display:flex;align-items:center;gap:10px; }
+.powered-mark { display:block;width:34px;height:34px;overflow:hidden;border-radius:50%;background:#fff;flex-shrink:0; }
+.powered-mark img { height:34px;width:auto;max-width:none; }
+.sidebar-drawer { margin:0;height:100dvh;max-height:100dvh;width:270px;max-width:85vw;padding:0;border:0;border-right:1px solid #273247;background:#0e1522;color:#e2e8f0; }
+.sidebar-drawer::backdrop { background:#020617b8;backdrop-filter:blur(4px); }
+.create-user-dialog { width:min(480px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:0;border:1px solid #334155;border-radius:16px;background:#111a29;color:#e2e8f0;box-shadow:0 30px 100px #0008; }
+.create-user-dialog::backdrop { background:#020617b8;backdrop-filter:blur(5px); }
