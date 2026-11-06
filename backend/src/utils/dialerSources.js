@@ -9,7 +9,7 @@ const sources = Object.freeze({
         baseUrl: 'https://balitechfe.dialerhosting.com/BcVBcXr/', salesParams: { ha_stats: '1', show_lead_count: '1' }, selectionSubstringBug: true,
         userEnv: 'DIALER_FE_USER', passwordEnv: 'DIALER_FE_PASSWORD',
         cachePath: path.join(root, 'dialer-fe', 'summary.json'), directory: path.join(root, 'dialer-fe', 'numbers') }),
-    fe2: Object.freeze({ id: 'fe2', name: 'FE 2', campaignId: '001', campaignName: 'Outbound',
+    fe2: Object.freeze({ id: 'fe2', name: 'FE2 S', campaignId: '001', campaignName: 'Outbound',
         baseUrl: 'https://balitechfe2s.dialerhosting.com/BA12asx/', salesParams: { ha_stats: '1', show_lead_count: '1' },
         userEnv: 'DIALER_FE2_USER', passwordEnv: 'DIALER_FE2_PASSWORD',
         cachePath: path.join(root, 'dialer-fe2', 'summary.json'), directory: path.join(root, 'dialer-fe2', 'numbers') }),

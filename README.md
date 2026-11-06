@@ -47,7 +47,7 @@ Only User and Admin are supported.
 
 - BaliT6 Voice: campaign 001 / Bismillah
 - FE: campaign 1002 / FE Bot 2 i9
-- FE 2: campaign 001 / Outbound
+- FE2 S: campaign 001 / Outbound
 
 File stats refresh every two minutes while visible. Manual refresh is rate-coalesced.
 Unique/duplicate/status CSVs update only via an admin-triggered scan.
@@ -85,7 +85,7 @@ credentials out of source control. Serve only frontend/dist publicly; exports re
 
 ## Workspace navigation
 - Overview: combined real campaign KPIs, per-dialer activity, and best Sale/HA files.
-- Dialers: detailed BaliT6, FE and FE 2 campaign views.
+- Dialers: detailed BaliT6, FE and FE2 S campaign views.
 - Downloads: saved number inventory and category/status CSV downloads.
 - User management: role-controlled account management and a focused create-user dialog.
 - Account navigation was removed. Password setup appears only during first-login onboarding.

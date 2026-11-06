@@ -111,7 +111,7 @@ function DialerOverview({ dialerId }) {
             <header className="dialer-header">
                 <div className="dialer-heading">
                     <span className="dialer-logo"><Phone size={20} /></span>
-                    <div><h1>{data?.dialer || (dialerId === 'fe2' ? 'FE 2' : dialerId === 'fe' ? 'FE' : 'BaliT6 Voice')}</h1><p>{data?.dialer || 'File performance'}<span> / </span>Campaign {data?.campaign_id || '—'}</p></div>
+                    <div><h1>{data?.dialer || (dialerId === 'fe2' ? 'FE2 S' : dialerId === 'fe' ? 'FE' : 'BaliT6 Voice')}</h1><p>{data?.dialer || 'File performance'}<span> / </span>Campaign {data?.campaign_id || '—'}</p></div>
                 </div>
                 <div className="dialer-actions">
                     <span className="dialer-auto-refresh">Auto · 2 min</span>
