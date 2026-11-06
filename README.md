@@ -89,7 +89,7 @@ credentials out of source control. Serve only frontend/dist publicly; exports re
 - Downloads: saved number inventory and category/status CSV downloads.
 - User management: role-controlled account management and a focused create-user dialog.
 - Account navigation was removed. Password setup appears only during first-login onboarding.
-- Supplied Go Conectivo branding appears beneath the login form and at the sidebar footer.
+- Supplied Go Connectivo branding appears beneath the login form and at the sidebar footer.
 
 Dashboard totals are sums of uploaded records, not distinct phone counts across dialers.
 Unavailable sources and stale snapshots are explicitly marked.
